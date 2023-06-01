@@ -46,7 +46,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'https://i8b202.p.ssafy.io/api/sign-in',
+        '[도메인]/api/sign-in',
         {
           memberAppId: AppId,
           memberAppPwd: AppPwd,

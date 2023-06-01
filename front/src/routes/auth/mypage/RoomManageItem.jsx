@@ -24,7 +24,7 @@ function RoomManageItem(props) {
   const resJoinMem = useRef('');
   const [memNameList, setMemNameList] = useState('');
   const instance = axios.create({
-    baseURL: 'https://i8b202.p.ssafy.io/api',
+    baseURL: '[도메인]/api',
     headers: {
       Authorization: `Bearer ${userInfo.token}`,
       contentType: 'application/json',

@@ -101,7 +101,7 @@ function Room() {
   const connect = async () => {
     client.current = new StompJs.Client({
       webSocketFactory: () =>
-        new SockJS('https://i8b202.p.ssafy.io/api/ws-stomp'), // proxy를 통한 접속
+        new SockJS('[도메인]/api/ws-stomp'), // proxy를 통한 접속
       connectHeaders: {},
       debug: str => {
         console.log(str);

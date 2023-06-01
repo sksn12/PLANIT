@@ -6,7 +6,7 @@ export const ServiceFindNotification = async userInfo => {
     console.log(userInfo);
 
     const success = await axios.get(
-      `https://i8b202.p.ssafy.io/api/notification`,
+      `[도메인]/api/notification`,
       {
         headers: {
           Authorization: `Bearer ${userInfo.token}`,

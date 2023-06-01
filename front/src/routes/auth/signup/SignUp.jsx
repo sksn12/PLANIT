@@ -96,7 +96,7 @@ function SignUp() {
     if (realIdValid && pwCheckValid) {
       try {
         const response = await axios.post(
-          'https://i8b202.p.ssafy.io/api/members',
+          '[도메인]/api/members',
           {
             memberAppId: loginId,
             memberAppPwd: pw,
@@ -127,7 +127,7 @@ function SignUp() {
       alert('아이디를 올바르게 입력해주세요');
     } else {
       const response = await axios.get(
-        `https://i8b202.p.ssafy.io/api/members/id/${loginID}`
+        `[도메인]/api/members/id/${loginID}`
       );
       if (!response.data) {
         alert('아이디가 중복되었습니다.');

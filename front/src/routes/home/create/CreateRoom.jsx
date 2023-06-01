@@ -35,7 +35,7 @@ function CreateRoom() {
 
   // axios 인스턴스 기본값 설정
   const instance = axios.create({
-    baseURL: 'https://i8b202.p.ssafy.io/api',
+    baseURL: '[도메인]/api',
     headers: {
       Authorization: `Bearer ${userInfo.token}`,
       contentType: 'application/json',
@@ -107,7 +107,7 @@ function CreateRoom() {
     if (event !== '') {
       try {
         const response = await axios.get(
-          `https://i8b202.p.ssafy.io/api/members/${event}`
+          `[도메인]/api/members/${event}`
         );
         console.log(response.data);
         setDropDownFriends(response.data);

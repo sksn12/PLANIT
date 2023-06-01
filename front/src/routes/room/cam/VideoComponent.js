@@ -11,8 +11,8 @@ import { roomInfoState } from '../../../app/store';
 import UserVideoComponent from './UserVideoComponent';
 import classes from './VideoComponent.module.scss';
 
-const OPENVIDU_SERVER_URL = 'https://i8b202.p.ssafy.io:8443';
-// const OPENVIDU_SERVER_URL = 'https://i8b202.p.ssafy.io';
+const OPENVIDU_SERVER_URL = '[도메인]:8443';
+// const OPENVIDU_SERVER_URL = '[도메인]';
 const OPENVIDU_SERVER_SECRET = 'MY_SECRET';
 
 class VideoComponent extends Component {
